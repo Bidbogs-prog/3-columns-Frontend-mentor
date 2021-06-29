@@ -79,9 +79,31 @@ p {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  margin: 0 auto;
 }
 
 .section {
   padding-bottom: 70px;
   padding-top: 50px;
+}
+
+@media all and (min-width: 1100px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section1 {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .section3 {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .attribution {
+    margin-left: 900px;
+  }
 }
